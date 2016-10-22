@@ -1,0 +1,32 @@
+
+      body { 
+        background: url('http://s3-eu-west-1.amazonaws.com/larpme-system/trajectory_wall.jpg') fixed; 
+        background-position: center;
+        background-repeat: no-repeat; 
+        background-size: cover; 
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .jumbotron {
+        background-color: rgba(0,0,0,.7);
+      }
+
+      .jumbotron h1 {
+        text-align: center;
+      }
+
+      .jumbotron .lead {
+        text-align: center;
+      }
+
+      .blob {
+        background-color: rgba(0,0,0,.7);
+        border-radius: .5em;
+        padding: .5em;
+        margin: .1em;
+      }
+
+      h1,h2,h3,h4,h5 {
+	font-family: 'Righteous', serif;
+
+      }
