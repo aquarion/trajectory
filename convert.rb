@@ -1,5 +1,5 @@
 require 'gollum-lib'
-wiki = Gollum::Wiki.new("../trajectory.wiki")
+wiki = Gollum::Wiki.new("../trajectory.wiki", :base_path => "/trajectory")
 wiki.pages.each do |p| 
 	puts p.title
 	filename = p.filename.gsub(/md$/, "html")
