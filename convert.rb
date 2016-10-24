@@ -4,8 +4,15 @@ wiki.pages.each do |p|
 	puts p.title
 	filename = p.filename.gsub(/md$/, "html")
 
+	if p.title == "Home"
+		layout = "index"
+		filename = "index.html"
+	else
+		layout = "page"
+	end	
+
 	text = <<-EOW--- 
-layout: page
+layout: #{layout}
 title: #{p.title}
 author: #{p.last_version.author.name}
 --- \n#{p.formatted_data}
