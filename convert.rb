@@ -5,7 +5,7 @@ wiki.pages.each do |p|
 	#filename = p.filename.gsub(/md$/, "html")
 	filename = p.filename
 
-	if p.title == "Home"
+	if p.title == "Home----"
 		layout = "index"
 		filename = "index.html"
 	else

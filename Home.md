@@ -1,5 +1,5 @@
 --- 
-layout: index
+layout: page
 title: Home
 author: Nicholas Avenell
 --- 
