@@ -11,12 +11,12 @@ wiki.pages.each do |p|
 		layout = "page"
 	end	
 
-	text = <<-EOW--- 
+	text = "--- 
 layout: #{layout}
 title: #{p.title}
 author: #{p.last_version.author.name}
---- \n#{p.formatted_data}
-EOW
+--- \n#{p.formatted_data}"
+
 	File.open(filename, 'w') { |file| file.write(text) }
 	#puts p.formatted_data
 end
